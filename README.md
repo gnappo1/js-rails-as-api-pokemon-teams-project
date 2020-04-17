@@ -98,7 +98,7 @@ rails g resource trainer name
 rails g resource pokemon species nickname trainer:references
 ```
 
-Run `rails db:migrate` to create a schema, models, and controllers. Using
+Run `rails db:migrate` to execute our migration files, and create database and schema. Using
 `trainer:references` will set up `belongs_to :trainer` in the `Pokemon` model,
 though it won't update the other side of the relationship. You will need to add
 the `has_many :pokemons` in the `Trainer` model yourself.
